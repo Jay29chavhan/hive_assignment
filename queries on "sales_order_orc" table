@@ -6,6 +6,9 @@ select year_id, sum(sales) as total_sales from sales_order_data_orc group by yea
 
 b. Find a product for which maximum orders were placed
 
+select PRODUCTLINE, max(QUANTITYORDERED) from sales_order_data ORDER BY PRODUCTLINE DESC;
+
+
 
 c. Calculate the total sales for each quarter
 d. In which quarter sales was minimum
